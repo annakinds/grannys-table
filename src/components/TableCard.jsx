@@ -1,9 +1,10 @@
 import React from "react";
 
-const Table = ({ }) => {
+
+const Table = ({id}) => {
     return (
         <div>
-            <button> TABLE</button>
+            <button className="table__button">{id}</button>
         </div>
     );
 };

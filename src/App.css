@@ -1,3 +1,28 @@
-button {
+.tables__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem;
+}
+.tables__list {
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tables__listitem {
+  margin: 0.5rem;
+}
+
+.table__button {
   width: 100%;
+  background-color: transparent;
+  border: 2px dashed #E19283;
+  padding: 0.5rem;
+  color: #B34E46;
+  height: 5rem;
+}
+
+.table__button:hover, .table__button:active {
+  background-color: #E19283;
 }

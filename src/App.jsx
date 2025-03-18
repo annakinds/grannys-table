@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import './reset.css'
 import './App.css'
 import Tables from './components/TableDashboard';
 

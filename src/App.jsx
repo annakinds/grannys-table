@@ -2,20 +2,17 @@ import { useState } from 'react'
 import './reset.css'
 import './App.css'
 import Tables from './components/TableDashboard';
+import Service from './components/RestaurantService';
 
 function App() {
+  
+  const [active, setActive] = useState(false);
 
   return (
-    <html lang="en">
-      <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Granny's Table</title>
-      </head>
-      <body>
-        <Tables />
-      </body>
-    </html>
+    <div>
+      <Tables active={active} setActive={setActive} />
+      <Service active={active} />
+    </div>
   );
 };
 

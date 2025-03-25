@@ -1,6 +1,6 @@
 import Table from "./TableCard";
 
-const Tables = () => {
+const Tables = ({ setActive, active }) => {
     const tables = [
         { id: 1, width: "6rem" },
         { id: 2, width: "10rem" },
@@ -40,7 +40,7 @@ const Tables = () => {
             <ul className="tables__list">
                 {tables.map((table) => (
                     <li className={`tables__listitem table-${table.id}`} key={table.id} style={{ width: table.width }}>
-                        <Table width={table.width} id={table.id} />
+                        <Table width={table.width} id={table.id} setActive={setActive} active={active} />
                     </li>
                 ))}
             </ul>

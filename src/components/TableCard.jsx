@@ -1,4 +1,3 @@
-import { useState } from "react";
 
 const Table = ({ id, setActive, active }) => {
 //noem active nog anders, bv. currenTabel

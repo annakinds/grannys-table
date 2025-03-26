@@ -32,11 +32,13 @@
   border: 2px solid #E19283;
 }
 
-.table__button:hover, .fill {
+.table__button:hover,
+.fill {
   background-color: #E19283;
 }
 
-.menu__title {
+.menu__title,
+.drinks__title {
   font-size: 1.5rem;
   color: #434834;
   font-weight: bold;
@@ -48,6 +50,20 @@
   margin: 1rem;
 }
 
+.service__row {
+  display: flex;
+  flex-direction: row;
+}
+
+.service__title {
+  margin-left: .5rem;
+  background-color: #A6AC8A;
+  color: #434834;
+  padding: .5rem;
+  font-weight: bold;
+}
+
+
 .menuItems {
   display: flex;
   flex-direction: row;
@@ -56,14 +72,25 @@
   max-width: 30rem;
 }
 
-.menuItem {
+.item {
   border: 1px solid #A6AC8A;
   background-color: transparent;
   color: #A6AC8A;
   font-size: 1rem;
   padding: 1rem;
   margin: .5rem;
+  font-weight: bold;
 }
+
+.checked {
+  color: #767A61;
+  background-color: #A6AC8A;
+}
+
+/* .checkbox {
+  background-color: #E6DFCF;
+  border: none;
+} */
 
 .menuItem:hover {
   background-color: #A6AC8A;

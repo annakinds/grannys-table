@@ -1,25 +1,20 @@
+import React from "react";
 
-const Service = () => {
-    const menuItems = [
-        { id: 1, name: "Oma’s Stoofpot" },
-        { id: 2, name: "Boerenkost" },
-        { id: 3, name: "Ouderwetse Smaken" },
-        { id: 4, name: "Oma’s Gehaktbal" },
-        { id: 5, name: "Knusse Winterkost" },
-        { id: 6, name: "Zoete Herinneringen" },
-        { id: 7, name: "Tijdloze Maaltijd" },
-        { id: 8, name: "Grootmoeders Speciaal" },
-    ];
+
+const MenuItems = ({ menuItems, setChecked, checked }) => {
+    const toggleChecked = (id) => {
+        setChecked(id);
+
+    };
 
     return (
         <div className="menu">
             <h2 className="menu__title">Menu</h2>
             <ul className="menuItems">
-                {menuItems.map((menuItem) => (
-                    <li key={menuItem.id}>
-                        <button className="menuItem">
-                            <input type="checkbox" id={menuItem.id} />
-                            <label htmlFor={menuItem.id}>{menuItem.name}</label>
+                {menuItems.map((item) => (
+                    <li key={item.id}>
+                        <button className={`item ${checked === item.id ? 'checked' : ''}`} id={item.id} onClick={() => toggleChecked(item.id)}>
+                            {item.name}
                         </button>
                     </li>
                 ))}
@@ -28,4 +23,4 @@ const Service = () => {
     );
 }
 
-export default Service;
+export default MenuItems;

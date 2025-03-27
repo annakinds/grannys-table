@@ -96,3 +96,36 @@
   background-color: #A6AC8A;
   color: #767A61;
 }
+
+.recommended {
+  border: 1px solid #767A61;
+  margin-left: .5rem;
+}
+
+
+.recommended__title, .dropdown__title {
+  font-weight: bold;
+  color: #767A61;
+  padding: .5rem;
+  padding-bottom: 0;
+}
+
+.recommended__drinks {
+  color: #A6AC8A;
+  display: flex;
+  flex-direction: row;
+}
+
+.recommended__drink {
+  padding: .5rem;
+}
+
+.dropdown__content {
+  background-color: transparent;
+  color: #767A61;
+  padding: .5rem;
+  border: 1px solid #767A61;
+  margin: .5rem;
+  font-size: 1rem;
+}
+

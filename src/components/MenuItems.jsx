@@ -4,7 +4,6 @@ import React from "react";
 const MenuItems = ({ menuItems, setChecked, checked }) => {
     const toggleChecked = (id) => {
         setChecked(id);
-
     };
 
     return (

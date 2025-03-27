@@ -9,12 +9,10 @@ function App() {
   const [active, setActive] = useState(false);
   const [checked, setChecked] = useState(false);
 
-
-
   return (
     <div>
       <Tables active={active} setActive={setActive} />
-      <Service active={active} checked={checked} setChecked={setChecked}/>
+      <Service active={active} checked={checked} setChecked={setChecked} />
     </div>
   );
 };

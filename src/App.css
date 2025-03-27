@@ -38,7 +38,8 @@
 }
 
 .menu__title,
-.drinks__title {
+.drinks__title,
+.co2Meter__title {
   font-size: 1.5rem;
   color: #434834;
   font-weight: bold;
@@ -103,7 +104,8 @@
 }
 
 
-.recommended__title, .dropdown__title {
+.recommended__title,
+.dropdown__title {
   font-weight: bold;
   color: #767A61;
   padding: .5rem;
@@ -129,3 +131,26 @@
   font-size: 1rem;
 }
 
+.meter__background {
+  background-color: #A6AC8A;
+  width: 20rem;
+  height: 2rem;
+  margin-left: .5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.meter {
+  background-color: #767A61;
+  height: 2rem;
+}
+
+.meter__discount {
+  color: #E6DFCF;
+  padding:0rem 0.5rem;
+  display: flex;
+  align-self: center;
+  text-align: end;
+  font-weight: bold;
+}

@@ -1,8 +1,7 @@
 import React from "react";
 import MenuItems from "./MenuItems.jsx";
 import Drinks from "./Drinks.jsx";
-
-// import Co2Meter from "./Co2Meter.jsx";
+import Co2Meter from "./Co2Meter.jsx";
 // import Bill from "./Bill.jsx";
 
 
@@ -89,7 +88,10 @@ const Service = ({ active, checked, setChecked }) => {
             <h2 className="service__title">Table {active}</h2>
             <div className="service__row">
                 <MenuItems menuItems={menuItems} setChecked={setChecked} checked={checked} />
+                <div className="drinksAndMeter">
                 {selectedMenu && <Drinks drinks={selectedMenu.drinks} />}
+                <Co2Meter />
+                </div>
             </div>
 
         </div>

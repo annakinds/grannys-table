@@ -36,7 +36,7 @@ const Tables = ({ setActive, active }) => {
 
     return (
         <div className="tables">
-            <h1 className="tables__title">Table Dashboard</h1>
+            <h1 className="tables__title">Granny's tables</h1>
             <ul className="tables__list">
                 {tables.map((table) => (
                     <li className={`tables__listitem table-${table.id}`} key={table.id} style={{ width: table.width }}>

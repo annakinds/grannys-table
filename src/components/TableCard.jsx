@@ -1,19 +1,18 @@
-
-const Table = ({ id, setActive, active }) => {
-//noem active nog anders, bv. currenTabel
+const Table = ({ id, setActive, active, readyTables }) => {
     const toggleActive = () => {
         setActive(id);
     };
+    console.log(readyTables);
 
     return (
         <div>
             <button
-                className={`table__button ${active === id ? 'fill' : ''}`}
+                className={`table__button ${active === id ? 'fill' : ''} ${readyTables[id] ? 'border' : ''}`}
                 onClick={toggleActive}
             >
-                {id}
+                {id} {readyTables[id] && "🔔"}
             </button>
-        </div >
+        </div>
     );
 };
 

@@ -1,7 +1,9 @@
-const Drinks = ({ drinks, setSelectedOption, selectedOption }) => {
+const Drinks = ({ drinks, setSelectedOption, selectedOption, setCheckedDrink }) => {
     const handleChange = (e) => {
         setSelectedOption(e.target.value);
+        setCheckedDrink(e.target.name)
     };
+
 
     return (
         <div className="drinks">
